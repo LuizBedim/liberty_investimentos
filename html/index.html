@@ -5,22 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Liberty</title>
     <style>
         * {
             padding: 0;
             margin: 0;
-        }
-
-        .body {
-            background-image: url(../img/city1.jpg);
-        }
-
-        .footer {
-            background: linear-gradient(208.68deg, #7B00C7 -78.31%, #4900BF 259.38%);
-            width: 100%;
-            height: 10%;
         }
 
     </style>
@@ -31,11 +21,11 @@
 <body>
 
 
-    <nav class="navbar shadow navbar-light bg-faded fixed-top" style="background: linear-gradient(176.35deg, #7B00C7 -36.99%, #4900BF 164.96%); height:6rem;">
+    <nav class="navbar shadow navbar-light bg-faded fixed-top bgColorTop">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample" style="width: 6rem; margin-left: 2.5rem;">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
             </button>
 
             <h1 class="text-center" style="color: #fff; font-family: KoHo; font-size: 4rem; margin-right: 4rem;">Liberty</h1>
@@ -118,13 +108,18 @@
     
 
     <!-- Background Image -->
-    <div class="bg-image" style="background-image: url(../img/city1.jpg); height: 60rem;">
-    </div>
+        <div class="bg-image bgBody">
+            <div class="mask maskColor">
+
+            </div>
+        </div>
     
     <footer class="bg-light text-center text-lg-start fixed-bottom">
-        <div class="text-left p-3" style="background: linear-gradient(208.68deg, #7B00C7 -78.31%, #4900BF 259.38%); color: #fff;">
-            <a class="text-light" href="#" style="text-decoration: none; font-size: 1.5rem;">Sobre nós</a>
+
+        <div class="text-left p-3 bgColorBottom">
+            <a class="text-light sobreNosText" href="sobreNos.html">Sobre nós</a>
         </div>
+
     </footer>
 
 

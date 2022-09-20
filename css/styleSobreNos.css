@@ -1,0 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  background-size: cover; background-repeat: no-repeat; height: 100vh;">
+*/
+.overview {
+    background-image: url(../img/bgSobreNos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* style=" color:#7B00C7; position: relative; top: 40vh; left: 30vh; font-size: 9rem;" */
+.config {
+    font-family: KoHo;
+    font-size: 9rem;
+    color: #7B00C7;
+    position: relative;
+    top: 40vh;
+    left: 30vh; 
+}
