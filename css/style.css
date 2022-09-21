@@ -4,28 +4,32 @@
     margin: 0;
 }
 
-.bgColorTop {
-    background: linear-gradient(176.35deg, #7B00C7 -36.99%, #4900BF 164.96%);
-    height: 6rem;
+/* style="color: #fff; font-family: KoHo; font-size: 4rem; margin-right: 4rem;"*/
+.title-text {
+    color: #fff;
+    font-family: KoHo;
+    font-size: 4rem;
+    margin-right: 4rem;
 }
 
-.bgColorBottom {
+.bg-color-top {
+    background: linear-gradient(176.35deg, #7B00C7 -36.99%, #4900BF 164.96%);
+}
+
+.bg-color-bottom {
     background: linear-gradient(176.35deg, #7B00C7 -36.99%, #4900BF 164.96%);
     color: #fff;
 }
 
-.sobreNosText {
+.sobre-nos-text {
     text-decoration: none;
     font-size: 1.5rem;
 }
 
-.bgBody {
+.bg-body {
     background-image: url(../img/city1.jpg);
+    filter: brightness(50%);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-}
-
-.maskColor {
-    background-color: rgba(0, 0, 0, 0.6);
 }

@@ -7,7 +7,7 @@
 
 /*  background-size: cover; background-repeat: no-repeat; height: 100vh;">
 */
-.overview {
+.bg-image {
     background-image: url(../img/bgSobreNos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,4 +22,26 @@
     position: relative;
     top: 40vh;
     left: 30vh; 
+}
+
+.titulo-text-sobre-nos {
+    font-size: 3.5rem;
+    color: #fff;
+    position: relative;
+    left: 120vh;
+}
+
+.text-sobre-nos {
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    left: 120vh;
+    width: 70vh;
+    text-align: justify;
+}
+
+.bg-form {
+    background-color: rgba(152, 152, 152, 0.827);
+    width: 100px;
+    height: 100px;
 }
