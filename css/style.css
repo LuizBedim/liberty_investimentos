@@ -26,10 +26,31 @@
     font-size: 1.5rem;
 }
 
+/* filter: brightness(50%); */
 .bg-body {
-    background-image: url(../img/city1.jpg);
-    filter: brightness(50%);
+    background-image: url(../img/city1_brh.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+.top-form {
+    position: relative;
+    top: 20vh;
+}
+
+.form-bg-color {
+    background-color: #F1F1F1;
+    border-top: 5vh;
+}
+
+.line-bg-color {
+    background-color: #B8B8B8;
+}
+
+.btn-criar-conta {
+    width: 100%;
+    font-family: KoHo;
+    background: linear-gradient(176.35deg, #7B00C7 -36.99%, #4900BF 164.96%);
+    color: #fff;
 }
