@@ -10,6 +10,7 @@
     font-family: KoHo;
     font-size: 4rem;
     margin-right: 4rem;
+    font-weight: bold;
 }
 
 .bg-color-top {
@@ -53,4 +54,9 @@
     font-family: KoHo;
     background: linear-gradient(176.35deg, #7B00C7 -36.99%, #4900BF 164.96%);
     color: #fff;
+}
+
+.btn-menu {
+    margin-left: 2rem;
+    border: 0;
 }
