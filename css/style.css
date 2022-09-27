@@ -42,11 +42,18 @@
 
 .form-bg-color {
     background-color: #F1F1F1;
-    border-top: 5vh;
+    margin-top: 5vh;
+    height: 30rem;
+    border-radius: 20px;
+    position: relative;
 }
 
 .line-bg-color {
     background-color: #B8B8B8;
+}
+
+.link-color {
+    text-decoration: none;
 }
 
 .btn-criar-conta {
@@ -54,6 +61,11 @@
     font-family: KoHo;
     background: linear-gradient(176.35deg, #7B00C7 -36.99%, #4900BF 164.96%);
     color: #fff;
+    height: 3.5rem;
+}
+
+.input-type {
+    margin-top: 2rem;
 }
 
 .btn-menu {
