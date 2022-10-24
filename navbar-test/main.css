@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: KoHo;
 }
 
 .container-nav {
@@ -16,7 +17,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 nav {
@@ -36,7 +37,6 @@ h1 {
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-family: KoHo;
 }
 
 .hamburger {
@@ -98,88 +98,11 @@ h1 {
     margin: 0 -16px;
 }
 
-.menu a {
-    color: #FFF;
-    margin: 0 16px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.4s;
-    padding: 8px 16px;
-    border-radius: 99px;
-}
-
-.menu a.is-active, .menu a:hover {
-    background-color: var(--primary);
-}
-
 @media (min-width: 768px) {
     .hamburger {
         display: none;
     }
     .menu {
         display: flex;
-    }
-}
-
-/*  background-size: cover; background-repeat: no-repeat; height: 100vh;">
-*/
-.config-main {
-    background-image: url(../img/bgSobreNos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-
-    position: fixed;
-    left: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* style=" color:#7B00C7; position: relative; top: 40vh; left: 30vh; font-size: 9rem;" */
-.config {
-    font-family: KoHo;
-    font-size: 9rem;
-    font-weight: bold;
-    color: #7B00C7;
-
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-sobre-nos {
-    font-size: 2rem;
-    color: #fff;
-    position: relative;
-    text-align: justify;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 30%;
-    margin: 30px;
-}
-
-@media only screen and (max-width: 768px) {
-    .bg-image {
-        background-image: url(../img/city2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-    }
-
-    .config-main {
-        flex-direction: column;
-    }
-
-    .config {
-        font-size: 12vw;
-        justify-content: 0;
     }
 }
