@@ -1,0 +1,30 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "mysql",
+            "name": "Contas_bancarias",
+            "database": "bdcontas",
+            "username": "root",
+            "password": "1404"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "dbapache",
+            "database": "aula_fatec",
+            "username": "root",
+            "password": ""
+        }
+    ]
+}
