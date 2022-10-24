@@ -1,3 +1,8 @@
+<?php 
+require_once("../base/baseNavbar.html"); 
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">

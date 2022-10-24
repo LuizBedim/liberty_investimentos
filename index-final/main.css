@@ -177,7 +177,7 @@ h1 {
 }
 
 .left-login-image {
-    width: 35vw;
+    width: 30vw;
 }
 
 .right-login {
@@ -328,3 +328,8 @@ p.footer {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 600px) {
+    footer {
+        opacity: 0;
+    }
+}
