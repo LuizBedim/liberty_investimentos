@@ -1,0 +1,28 @@
+:root {
+    --primary: #8c38ff;
+    --light: #EEEEEE;
+    --dark: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/city1_brh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: fixed;
+    left: 0;
+    /* background: #2c2c2c; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

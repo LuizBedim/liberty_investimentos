@@ -1,3 +1,8 @@
+<?php 
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="../sobre-nos/main.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -18,16 +23,15 @@
     <title>Liberty</title>
 </head>
 <body>
-    
-    <nav>
+<nav>
         <div class="container-nav">
             <h1>Liberty</h1>
 
         <div class="menu">
             <a href="../index-final/index.html">Home</a>
             <a href="../cadastro/cadastro.php">Cadastro</a>
-            <a href="#" class="is-active">Sobre Nós</a>
-            <a href="../contato/contato.php">Contato</a>
+            <a href="../sobre-nos/index.html">Sobre Nós</a>
+            <a href="#" class="is-active">Contato</a>
         </div>
 
         <button class="hamburger">
@@ -39,25 +43,19 @@
         
     </nav>
 
-    <div class="container-main">
-        <div class="config-main">
-                <div class="left-side">
-                    <h1>Liberty</h1>
-                </div>
+    <div class="container-fluid image-main">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
 
-                <div class="right-side">
-                    <div class="text-sobre-nos">
-                        <p>Sobre Nós<br>Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only five centuries.</p>
-                    </div>
-                </div>
+            </div>
+            <div class="col-3"></div>
         </div>
     </div>
 
 
-    <script src="../index-final/main.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
         </script>
