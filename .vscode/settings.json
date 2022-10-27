@@ -25,6 +25,19 @@
             "database": "aula_fatec",
             "username": "root",
             "password": ""
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "liberty",
+            "database": "liberty",
+            "username": "root",
+            "password": ""
         }
     ]
 }
