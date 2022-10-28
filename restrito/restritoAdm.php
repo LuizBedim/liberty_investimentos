@@ -1,3 +1,9 @@
+<?php
+include("verifica_restrito.php");
+if(!isset($_SESSION))
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +14,6 @@
 </head>
 <body>
     <h1>Logado como super usuário</h1>
+    <a href="sair.php">Sair</a>
 </body>
 </html>

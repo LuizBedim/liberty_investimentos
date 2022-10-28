@@ -27,7 +27,7 @@ try {
 			header("Location:restritoAdm.php");
     }
     else {
-        header("Location:index.php");
+        header("Location:admin.php");
     }
 
 } catch(PDOException $e) {
