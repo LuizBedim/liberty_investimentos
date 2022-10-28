@@ -121,9 +121,9 @@ h1 {
     }
 }
 
-.image-main {
+/* .image-main {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-image: url(../img/city1_brh.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ h1 {
     position: fixed;
     left: 0;
     bottom: 0;
-    /* background: #2c2c2c; */
+    
 
     display: flex;
     justify-content: center;
@@ -139,7 +139,6 @@ h1 {
 }
 
 .card-contact {
-    width: 80%;
     height: 70vh;
 
     display: flex;
@@ -158,4 +157,4 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */

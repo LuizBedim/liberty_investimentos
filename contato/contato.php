@@ -20,27 +20,30 @@
 
 <body>
 
-    <nav>
-        <div class="container-nav">
-            <h1>Liberty</h1>
-
-            <div class="menu">
-                <a href="../index-final/index.html">Home</a>
-                <a href="../cadastro/cadastro.php">Cadastro</a>
-                <a href="../sobre-nos/index.html">Sobre Nós</a>
-                <a href="#" class="is-active">Contato</a>
-            </div>
-
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-
-    </nav>
-
     <div class="container-fluid">
+        <nav class="row">
+            <div class="col-12">
+
+                <div class="container-nav">
+                    <h1>Liberty</h1>
+                    
+                    <div class="menu">
+                        <a href="../index-final/index.html">Home</a>
+                        <a href="../cadastro/cadastro.php">Cadastro</a>
+                        <a href="../sobre-nos/index.html">Sobre Nós</a>
+                        <a href="#" class="is-active">Contato</a>
+                    </div>
+                    
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                
+            </div>
+        </nav>
+
         <div class="row image-main">
             <div class="col-3"></div>
             <div class="col-6 center-main">
