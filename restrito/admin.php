@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/restrito-css/admin-style.css">
+    <link rel="stylesheet" href="../css/restrito-css/admin_style.css">
     <!-- Font-family KoHo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
             <div class="col-4"></div>
             <div class="col-4 card-center">
                 <form method="POST" action="process_login_restrito.php" class="card-login">
-                    <h2>LOGIN</h2>
+                    <h2>LOGIN-ADM</h2>
                     <div class="textfield">
                         <label for="usuario">Usuário</label>
                         <input type="text" name="usuario" id="usuario" autocomplete="off" placeholder="Usuário">
@@ -37,6 +37,16 @@
                 </form>
             </div>
             <div class="col-4"></div>
+        </div>
+
+        <div class="row image-main">
+            <div class="col-3"></div>
+            <div class="col-6 center-main">
+                <div class="card-contact">
+                
+                </div>
+            </div>
+            <div class="col-3"></div>
         </div>
     </div>
     

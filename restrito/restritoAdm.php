@@ -14,6 +14,7 @@ if(!isset($_SESSION))
 </head>
 <body>
     <h1>Logado como super usuário</h1>
+    <a href="exibir_usuarios.php">Exibir usuários</a><br>
     <a href="sair.php">Sair</a>
 </body>
 </html>
