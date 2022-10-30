@@ -122,7 +122,7 @@ h1 {
 }
 
 .image-main {
-    width: 102vw;
+    width: 100%;
     height: 100vh;
     background-image: url(../../img/city1_brh.png);
     background-size: cover;
