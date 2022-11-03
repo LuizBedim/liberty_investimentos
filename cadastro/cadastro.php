@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" type="text/css" href="../sobre-nos/main.css">
+    <link rel="stylesheet" type="text/css" href="cadastroStyle.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->

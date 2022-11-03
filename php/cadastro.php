@@ -45,7 +45,7 @@ if(!isset($numero))
     <title>Liberty</title>
 </head>
 <body>
-<!-- <nav>
+<nav>
         <div class="container-nav">
             <h1>Liberty</h1>
 
@@ -63,7 +63,7 @@ if(!isset($numero))
         </button>
         </div>
         
-    </nav> -->
+    </nav>
 
 
     <div class="container-fluid">
