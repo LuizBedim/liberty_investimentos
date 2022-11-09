@@ -1,0 +1,39 @@
+:root {
+    --primary: #8c38ff;
+    --light: #EEEEEE;
+    --dark: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: KoHo;
+}
+
+.container-main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-center {
+    width: 80vw;
+    height: 80vh;
+
+    background: var(--dark);
+
+    flex-direction: row;
+}
+
+.left {
+    width: 50%;
+    height: 50%;
+}
+
+.right {
+    width: 50%;
+}
