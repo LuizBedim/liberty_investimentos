@@ -55,7 +55,7 @@ if (!isset($numero))
                         <h1>Liberty</h1>
 
                         <div class="menu">
-                            <a href="../index-final/index.html">Home</a>
+                            <a href="../php/index.php">Home</a>
                             <a href="#" class="is-active">Cadastro</a>
                             <a href="../sobre-nos/index.html">Sobre Nós</a>
                             <a href="../contato/contato.php">Contato</a>

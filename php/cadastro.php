@@ -12,7 +12,7 @@ if(!isset($senha))
 	$senha = "";
 
 if(!isset($cpf))
-$cpf = "";
+    $cpf = "";
 
 if(!isset($celular))
 	$celular = "";

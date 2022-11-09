@@ -23,7 +23,7 @@
 
         <div class="menu">
             <a href="#" class="is-active">Home</a>
-            <a href="cadastro.php">Cadastro</a>
+            <a href="../cadastro/cadastro.php">Cadastro</a>
             <a href="../sobre-nos/index.html">Sobre</a>
             <a href="../contato/contato.php">Contato</a>
         </div>
