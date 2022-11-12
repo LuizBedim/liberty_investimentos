@@ -1,5 +1,5 @@
 <?php
-include("verifica.php");
+include("../php/verifica.php");
 if (!isset($_SESSION))
     session_start();
 ?>
@@ -12,7 +12,7 @@ if (!isset($_SESSION))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" href="../css/main-css/logado_style.css">
+    <link rel="stylesheet" href="../css/em_desenvolvimento/desenvolvimento.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -26,15 +26,15 @@ if (!isset($_SESSION))
 
 <body>
 
-    <nav>
+    <nav>    
         <div class="container-nav">
             <h1>Liberty</h1>
 
             <div class="menu">
-                <a href="../em_desenvolvimento/acoes.php">Ações</a>
-                <a href="../em_desenvolvimento/mercado.php">Mercado</a>
-                <a href="../em_desenvolvimento/live.php">Live</a>
-                <a href="#" class="is-active">Minha conta</a>
+                <a href="acoes.php">Ações</a>
+                <a href="mercado.php">Mercado</a>
+                <a href="#" class="is-active">Live</a>
+                <a href="../php/logado.php">Minha conta</a>
             </div>
 
             <button class="hamburger">
@@ -47,9 +47,9 @@ if (!isset($_SESSION))
     </nav>
 
     <div class="main">
-
-        <h1 style="color: #000;">Logado com sucesso</h1><br>
-        <a href="sair.php">Sair</a>
+        <h1 class="color-text">Página em desenvolvimento</h1><hr>
+        <a href="../php/logado.php">Minha conta</a>
+        <a href="../php/sair.php">Sair</a>
     </div>
 </body>
 
