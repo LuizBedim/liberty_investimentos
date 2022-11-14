@@ -1,9 +1,38 @@
 <?php
 include("verifica.php");
+require("conecta.php");
+
+$id = $nome = $sobrenome = $email = $senha = $cpf = $celular = $cep = $numero = "";
+
 if (!isset($_SESSION))
     session_start();
-?>
 
+$id = $_SESSION["id_cliente"];
+
+try {
+
+    $stmt = $conn->prepare("SELECT nome, sobrenome, email, senha, cpf, celular, cep, numero FROM clientes WHERE idcliente = $id");
+    $stmt->execute();
+
+    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+    foreach ($stmt->fetchAll() as $k=>$v) {
+        $nome = $v['nome'];
+        $sobrenome = $v['sobrenome'];
+        $email = $v['email'];
+        $senha = $v['senha'];
+        $cpf = $v['cpf'];
+        $celular = $v['celular'];
+        $cep = $v['cep'];
+        $numero = $v['numero'];
+    }
+} catch (PDOException $e) {
+    echo 'Error: '.$e->getMessage();
+}
+
+$conn = null;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,8 +76,9 @@ if (!isset($_SESSION))
     </nav>
 
     <div class="main">
-
-        <h1 style="color: #000;">Logado com sucesso</h1><br>
+        <form action="process_atualizar.php?id=<?= $id ?>" method="POST">
+        <?php include("formulario.php"); ?>
+ </form>
         <a href="sair.php">Sair</a>
     </div>
 </body>

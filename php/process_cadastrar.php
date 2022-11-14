@@ -20,11 +20,9 @@ try {
     $stmt->bindParam("celular",$celular);
     $stmt->bindParam("cep",$cep);
     $stmt->bindParam("numero",$numero); 
-    echo "chegou aqui";
 
     if($stmt->execute()) {
         header("Location:index.php");
-        echo "chegou aqui";
     }
     else {
         header("Location:cadastro.php?msg=Erro na inclusão do usuário");
