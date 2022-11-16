@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" type="text/css" href="../css/contato-css/contato_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/contato_css/contato_style.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -28,10 +28,10 @@
                     <h1>Liberty</h1>
                     
                     <div class="menu">
-                        <a href="../php/index.php">Home</a>
+                        <a href="../index.php">Home</a>
                         <a href="../cadastro/cadastro.php">Cadastro</a>
-                        <a href="../sobre-nos/index.html">Sobre Nós</a>
                         <a href="#" class="is-active">Contato</a>
+                        <a href="../restrito/admin.php">Admin</a>
                     </div>
                     
                     <button class="hamburger">

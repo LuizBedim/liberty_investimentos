@@ -55,10 +55,10 @@ if (!isset($numero))
                         <h1>Liberty</h1>
 
                         <div class="menu">
-                            <a href="../php/index.php">Home</a>
+                            <a href="../index.php">Home</a>
                             <a href="#" class="is-active">Cadastro</a>
-                            <a href="../sobre-nos/index.html">Sobre Nós</a>
                             <a href="../contato/contato.php">Contato</a>
+                            <a href="../restrito/admin.php">Admin</a>
                         </div>
 
                         <button class="hamburger">
@@ -75,54 +75,8 @@ if (!isset($numero))
     <div class="container-fluid">
         <div class="row">
             <div class="col-2"></div>
-            <div class="col-8 main-form">
-                <div class="main-card">
-                    <form method="POST" action="process_cadastrar.php" class="card-cadastro">
-                        <h2>Cadastro</h2>
-                        
-                        <div class="left-card">
-                            <!-- <div class="textfield">
-                                <label name="nome">Nome:</label>
-                                <input type="text" name="nome" id="nome" placeholder="Nome">
-                            </div>
-                            <div class="textfield">
-                                <label name="sobrenome">Sobrenome:</label>
-                                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
-                            </div>
-                            <div class="textfield">
-                                <label name="email">E-mail:</label>
-                                <input type="email" name="email" id="email" placeholder="Email">
-                            </div>
-                            <div class="textfield">
-                                <label name="senha">Senha:</label>
-                                <input type="password" name="senha" id="senha" placeholder="Senha">
-                            </div> -->
-                        </div>
-
-                        <div class="right-card">
-                            <!-- <div class="textfield">
-                                <label name="cpf">CPF:</label>
-                                <input type="text" name="cpf" id="cpf" autocomplete="off" maxlength="14" placeholder="000.000.000-00">
-                            </div>
-                            <div class="textfield">
-                                <label name="celular">Celular:</label>
-                                <input type="text" name="celular" id="celular" autocomplete="off" maxlength="14" placeholder="(00)00000-0000">
-                            </div>
-                            <div class="textfield">
-                                <label name="cep">Cep:</label>
-                                <input type="text" name="cep" id="cep" maxlength="9" placeholder="00000-000">
-                            </div>
-                            <div class="textfield">
-                                <label name="numero">Número:</label>
-                                <input type="text" name="numero" id="numero" placeholder="000">
-                            </div> -->
-                        </div>
-
-                        <div class="btn-form">
-                            <input type="submit" value="cadastrar">
-                        </div>
-                    </form>
-                </div>
+            <div class="col-8">
+                
             </div>
             <div class="col-2"></div>
         </div>
