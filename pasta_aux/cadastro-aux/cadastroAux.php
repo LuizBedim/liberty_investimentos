@@ -83,9 +83,7 @@
                         <label name="numero">Número:</label>
                         <input type="text" name="numero" id="numero" placeholder="000">
                     </div>
-                    <div class="btn-form">
-                        <input type="submit" value="cadastrar">
-                    </div>
+                    <input type="submit" class="btn-form" value="cadastrar">
                 </form>
             </div>
             <div class="col-4"></div>
