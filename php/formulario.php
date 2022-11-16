@@ -5,7 +5,7 @@ if (!isset($nome))
 if (!isset($sobrenome))
     $sobrenome = "";
 
-if (!isset($email)) {
+if (!isset($_GET["email"])) {
     $email = "";
     $auxe = "";
 } else {
@@ -15,7 +15,7 @@ if (!isset($email)) {
 if (!isset($senha))
     $senha = "";
 
-if (!isset($cpf)) {
+if (!isset($_GET["cpf"])) {
     $cpf = "";
     $auxf = "";
 } else {

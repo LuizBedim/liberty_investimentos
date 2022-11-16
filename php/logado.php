@@ -16,7 +16,7 @@ try {
 
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
-    foreach ($stmt->fetchAll() as $k=>$v) {
+    foreach ($stmt->fetchAll() as $k => $v) {
         $nome = $v['nome'];
         $sobrenome = $v['sobrenome'];
         $email = $v['email'];
@@ -27,7 +27,7 @@ try {
         $numero = $v['numero'];
     }
 } catch (PDOException $e) {
-    echo 'Error: '.$e->getMessage();
+    echo 'Error: ' . $e->getMessage();
 }
 
 $conn = null;
@@ -77,8 +77,8 @@ $conn = null;
 
     <div class="main">
         <form action="process_atualizar.php?id=<?= $id ?>" method="POST">
-        <?php include("formulario.php"); ?>
- </form>
+            <?php include("formulario.php"); ?>
+        </form>
         <a href="sair.php">Sair</a>
     </div>
 </body>
