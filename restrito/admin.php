@@ -22,33 +22,33 @@
 
 <body>
 
-<div class="container-fluid">
+    <div class="container-fluid">
 
-<div class="row">
-    <div class="col-12">
-    <nav>
-        <div class="container-nav">
-            <h1>Liberty</h1>
+        <div class="row">
+            <div class="col-12">
+            <nav>
+                <div class="container-nav">
+                    <h1>Liberty</h1>
 
-            <div class="menu">
-                <a href="../index.php">Home</a>
-                <a href="../cadastro/cadastro.php">Cadastro</a>
-                <a href="../contato/contato.php">Contato</a>
-                <a href="#" class="is-active">Admin</a>
-            </div>
+                    <div class="menu">
+                        <a href="../index.php">Home</a>
+                        <a href="../cadastro/cadastro.php">Cadastro</a>
+                        <a href="../contato/contato.php">Contato</a>
+                        <a href="#" class="is-active">Admin</a>
+                    </div>
 
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
 
-    </nav>
-    </div> <!-- col-12 -->
-</div> <!-- row -->
+            </nav>
+            </div> <!-- col-12 -->
+        </div> <!-- row -->
 
-<div class="row image-container">
+        <div class="row image-container">
             <div class="col-4"></div>
             <div class="col-4 card-center">
                 <form method="POST" action="process_login_restrito.php" class="card-login">
@@ -67,7 +67,7 @@
             <div class="col-4"></div>
         </div>
 
-</div> <!-- container-fluid -->
+    </div> <!-- container-fluid -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">

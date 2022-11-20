@@ -108,7 +108,8 @@ h1 {
     border-radius: 99px;
 }
 
-.menu a.is-active, .menu a:hover {
+.menu a.is-active,
+.menu a:hover {
     background-color: var(--primary);
 }
 
@@ -116,26 +117,19 @@ h1 {
     .hamburger {
         display: none;
     }
+
     .menu {
         display: flex;
     }
 }
 
-.card-center {
+
+.card-cadastro {
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-
-    height: 100vh;
-}
-
-.card-login {
-    width: 60%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 30px 35px;
 
@@ -145,11 +139,19 @@ h1 {
     box-shadow: 0px 10px 40px #00000056;
 }
 
-.card-login > h2 {
+.card-cadastro>h2 {
     color: var(--light);
     font-weight: 800;
     margin: 0;
-    font-family: KoHo;
+}
+
+.card-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
 }
 
 .textfield {
@@ -166,7 +168,7 @@ h1 {
     width: 100%;
     border: none;
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px;
     background: #2c2c2c;
 
     color: var(--light);
@@ -185,10 +187,10 @@ h1 {
     color: #EEEEEE80;
 }
 
-.btn-login {
+.btn-form {
     width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
+    padding: 5px 0px;
+    margin: 15px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -198,15 +200,13 @@ h1 {
     color: var(--dark);
     cursor: pointer;
 
-    font-family: KoHo;
-
     box-shadow: 0px 10px 40px -12px #21212170;
 }
 
 .image-container {
     width: 102vw;
     height: 100vh;
-    background-image: url(../../img/city1_brh.png);
+    background-image: url(../img/city1_brh.png);
     background-size: cover;
     background-repeat: no-repeat;
 

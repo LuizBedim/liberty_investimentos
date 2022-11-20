@@ -10,12 +10,11 @@ $id = $_GET["id"];
 try {
   $stmt = $conn->prepare("DELETE FROM clientes WHERE idcliente=$id"); 
   $stmt->execute();
-  echo "Registro excluído com sucesso!<br>";
+  header("Location:exibir_usuarios.php");
 } catch(PDOException $e) {
-  echo $sql . "<br>" . $e->getMessage();
+  echo $e->getMessage();
 }
 
 $conn = null;
 
 ?>
-<a href="exibir_usuarios.php">Ver usuários cadastrados</a>

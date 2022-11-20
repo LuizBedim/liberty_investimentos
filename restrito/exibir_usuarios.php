@@ -89,7 +89,7 @@ require_once("../php/conecta.php");
                                 <td><?php echo "".$v['sobrenome'].""; ?></td>
                                 <td><?php echo "".$v['email'].""; ?></td>
                                 <td><?php echo "".$v['celular'].""; ?></td>
-                                <td><a href='excluir.php?id=<?php "".$v['idcliente'].""; ?>'>Excluir</a></td>
+                                <td><a href='excluir.php?id=<?php echo "".$v['idcliente'].""; ?>'>Excluir</a></td>
                             </tr>
                             <?php
                                 }

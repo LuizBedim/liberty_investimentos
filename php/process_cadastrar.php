@@ -22,7 +22,7 @@ try {
     $stmt->bindParam("numero",$numero); 
 
     if($stmt->execute()) {
-        header("Location:index.php");
+        header("Location:../index.php");
     }
     else {
         header("Location:cadastro.php?msg=Erro na inclusão do usuário");
