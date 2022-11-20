@@ -60,23 +60,51 @@ require_once("../php/conecta.php");
                 <div class="tabela">
 
                     <?php
-                    try {
-                        $stmt = $conn->prepare("SELECT idcliente, nome, sobrenome, email, celular FROM clientes"); 
-                        $stmt->execute();
-                        
-                        // set the resulting array to associative
-                        $result = $stmt->setFetchMode(PDO::FETCH_ASSOC); 
-                        
-                        foreach($stmt->fetchAll() as $k=>$v) { 
-                            echo '<div class="line">';
-                            echo("<p>Nome: ".$v['nome']." | Sobrenome: ".$v['sobrenome']." | E-mail: ".$v['email']." | Celular: ".$v['celular']." | <a href='excluir.php?id=".$v['idcliente']."'>Excluir</a></p>");
-                            echo "</div>";
+                        try {
+                            $stmt = $conn->prepare("SELECT idcliente, nome, sobrenome, email, celular FROM clientes"); 
+                            $stmt->execute();
+                            
+                            // set the resulting array to associative
+                            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC); 
+                        ?>
+
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Sobrenome</th>
+                                <th>E-mail</th>
+                                <th>Celular</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <?php
+                                foreach($stmt->fetchAll() as $k=>$v) { 
+                            ?>
+                            <tr>
+                                <td><?php echo "".$v['nome'].""; ?></td>
+                                <td><?php echo "".$v['sobrenome'].""; ?></td>
+                                <td><?php echo "".$v['email'].""; ?></td>
+                                <td><?php echo "".$v['celular'].""; ?></td>
+                                <td><a href='excluir.php?id=<?php "".$v['idcliente'].""; ?>'>Excluir</a></td>
+                            </tr>
+                            <?php
+                                }
+                            ?>
+
+                        </tbody>
+
+                        <?php
+                        }   catch(PDOException $e)  {
+                                echo "Error: " . $e->getMessage();
                         }
-                    }   catch(PDOException $e)  {
-                        echo "Error: " . $e->getMessage();
-                    }
-                    $conn = null;
-                    ?>
+                        $conn = null;
+                        ?>
+
+                    </table>
                 </div>
             </div>
             <div class="col-2"></div>

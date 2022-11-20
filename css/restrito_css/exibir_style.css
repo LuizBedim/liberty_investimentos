@@ -135,7 +135,7 @@ h1 {
 } */
 
 .main {
-    width: 100vw;
+    width: 102vw;
     height: 100vh;
     background-image: url(../../img/city1_brh.png);
     background-size: cover;
@@ -146,6 +146,36 @@ h1 {
     /* background: #2c2c2c; */
 
     display: flex;
+
+}
+
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+}
+
+.content-table thead tr {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th, .content-table td {
+    padding: 12px 15px;
+    color: var(--light);
+}
+
+.content-table td a {
+    text-decoration: none;
+    color: red;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid var(--primary);
+    background-color: #2c2c2c;
 }
 
 .tabela {
@@ -153,24 +183,15 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-
-    flex-direction: column;
 }
 
-.line {
+.bg-tabela {
     background-color: var(--dark);
-    width: 100%;
-    color: var(--light);
-    border-radius: 10px;
-    margin-top: 2px;
+    width: 60%;
+    height: 100vh; 
 
-    text-align: center;
-    text-decoration: none;
-}
-
-.line a {
-    text-decoration: none;
-    color: red;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
