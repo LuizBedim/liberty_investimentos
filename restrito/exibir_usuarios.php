@@ -39,7 +39,7 @@ require_once("../php/conecta.php");
 
                         <div class="menu">
                             <a href="restritoAdm.php">Home</a>
-                            <a href="#" class="is-active">Cadastro</a>
+                            <a href="#" class="is-active">Usuários</a>
                         </div>
 
                         <button class="hamburger">
