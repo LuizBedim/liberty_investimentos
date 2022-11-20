@@ -141,6 +141,10 @@ h1 {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 1.2em;
+
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .content-table thead tr {
@@ -163,6 +167,14 @@ h1 {
 .content-table tbody tr {
     border-bottom: 1px solid var(--primary);
     background-color: #2c2c2c;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #292929;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary);
 }
 
 .tabela {
