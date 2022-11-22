@@ -71,8 +71,8 @@ if (!isset($numero))
         </div>
 
         <div class="row image-container">
-            <div class="col-4"></div>
-            <div class="col-4 card-center">
+            <div class="col-1 col-sm-4"></div>
+            <div class="col-10 col-sm-4 card-center">
                 <form action="../php/process_cadastrar.php" method="POST" class="card-cadastro">
                 <h2>Cadastro</h2>
                     <div class="textfield">
@@ -110,7 +110,7 @@ if (!isset($numero))
                     <input type="submit" class="btn-form" value="cadastrar">
                 </form>
             </div>
-            <div class="col-4"></div>
+            <div class="col-1 col-sm-4"></div>
         </div>
     </div>
     

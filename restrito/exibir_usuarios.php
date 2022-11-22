@@ -54,8 +54,8 @@ require_once("../php/conecta.php");
 
         <div class="row main">
 
-            <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-1 col-sm-2"></div>
+            <div class="col-10 col-sm-8">
 
                 <div class="tabela">
 
@@ -107,7 +107,7 @@ require_once("../php/conecta.php");
                     </table>
                 </div>
             </div>
-            <div class="col-2"></div>
+            <div class="col-1 col-sm-2"></div>
         </div> <!-- row -->
 
     </div> <!-- container-fluid -->

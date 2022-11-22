@@ -48,8 +48,8 @@
         </div> <!-- row -->
 
         <div class="row image-container">
-            <div class="col-4"></div>
-            <div class="col-4 card-center">
+            <div class="col-1 col-sm-4"></div>
+            <div class="col-10 col-sm-4 card-center">
                 <form method="POST" action="process_login_restrito.php" class="card-login">
                     <h2>LOGIN-ADM</h2>
                     <div class="textfield">
@@ -63,7 +63,7 @@
                     <input type="submit" class="btn-login" value="Login">
                 </form>
             </div>
-            <div class="col-4"></div>
+            <div class="col-12 col-sm-4"></div>
         </div>
 
     </div> <!-- container-fluid -->

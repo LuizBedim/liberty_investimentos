@@ -204,7 +204,7 @@ h1 {
 }
 
 .image-container {
-    width: 102vw;
+    width: 100vw;
     height: 100vh;
     background-image: url(../img/city1_brh.png);
     background-size: cover;

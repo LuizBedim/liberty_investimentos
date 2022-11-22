@@ -54,33 +54,49 @@ $conn = null;
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <nav>
+                    <div class="container-nav">
+                        <h1>Liberty</h1>
+                        
+                        <div class="menu">
+                            <a href="../em_desenvolvimento/acoes.php">Ações</a>
+                            <a href="../em_desenvolvimento/mercado.php">Mercado</a>
+                            <a href="../em_desenvolvimento/live.php">Live</a>
+                            <a href="#" class="is-active">Minha conta</a>
+                        </div>
+                        
+                        <button class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </nav>
+            </div> <!-- col-12 col-sm-12 -->
+        </div> <!-- row -->
+        
+        <div class="row">
+            <div class="col-1 col-sm-3"></div>
+            <div class="col-10 col-sm-6">
 
-    <nav>
-        <div class="container-nav">
-            <h1>Liberty</h1>
-
-            <div class="menu">
-                <a href="../em_desenvolvimento/acoes.php">Ações</a>
-                <a href="../em_desenvolvimento/mercado.php">Mercado</a>
-                <a href="../em_desenvolvimento/live.php">Live</a>
-                <a href="#" class="is-active">Minha conta</a>
-            </div>
-
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-
-    </nav>
-
-    <div class="main">
-        <form action="process_atualizar.php?id=<?= $id ?>" method="POST">
-            <?php include("formulario.php"); ?>
-        </form>
-        <a href="sair.php">Sair</a>
-    </div>
+                <div class="main">
+                    <form action="process_atualizar.php?id=<?= $id ?>" method="POST">
+                        <?php include("formulario.php"); ?>
+                    </form>
+                    <a href="sair.php">Sair</a>
+                </div>
+                
+            </div> <!--  col-10 col-sm-6 -->
+            <div class="col-1 col-sm-3"></div>
+        </div> <!-- row -->
+        
+    </div><!-- container-fluid -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

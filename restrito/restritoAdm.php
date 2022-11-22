@@ -48,13 +48,13 @@ if(!isset($_SESSION))
 
         <div class="row main">
 
-            <div class="col-4"></div>
-            <div class="col-4 bg-main">
+            <div class="col-1 col-sm-4"></div>
+            <div class="col-10 col-sm-4 bg-main">
                 <h1>Admin</h1>
                 <a href="exibir_usuarios.php">Exibir usuários</a><br>
                 <a href="sair.php">Sair</a>
             </div>
-            <div class="col-4"></div>
+            <div class="col-1 col-sm-4"></div>
             
         </div> <!-- row -->
 
