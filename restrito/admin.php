@@ -33,7 +33,6 @@
                     <div class="menu">
                         <a href="../index.php">Home</a>
                         <a href="../cadastro/cadastro.php">Cadastro</a>
-                        <a href="../contato/contato.php">Contato</a>
                         <a href="#" class="is-active">Admin</a>
                     </div>
 

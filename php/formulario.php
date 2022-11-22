@@ -80,6 +80,4 @@ if (!isset($numero))
     </label>
 </div>
 
-
 <input type="submit" value="Enviar">
-<input type="reset" value="Limpar">

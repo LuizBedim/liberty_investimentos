@@ -47,7 +47,6 @@ if (!isset($numero))
 
 <body>
 
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -58,7 +57,6 @@ if (!isset($numero))
                         <div class="menu">
                             <a href="../index.php">Home</a>
                             <a href="#" class="is-active">Cadastro</a>
-                            <a href="../contato/contato.php">Contato</a>
                             <a href="../restrito/admin.php">Admin</a>
                         </div>
 
