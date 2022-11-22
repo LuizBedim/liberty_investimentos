@@ -82,12 +82,12 @@ $conn = null;
             <div class="col-1 col-sm-3"></div>
             <div class="col-10 col-sm-6">
 
-                <div class="main">
+       
                     <form action="process_atualizar.php?id=<?= $id ?>" method="POST">
                         <?php include("formulario.php"); ?>
                     </form>
                     <a href="sair.php">Sair</a>
-                </div>
+                
                 
             </div> <!--  col-10 col-sm-6 -->
             <div class="col-1 col-sm-3"></div>
