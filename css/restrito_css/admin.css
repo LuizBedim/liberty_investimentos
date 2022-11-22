@@ -204,7 +204,7 @@ h1 {
 }
 
 .image-container {
-    width: 102vw;
+    width: 105vw;
     height: 100vh;
     background-image: url(../../img/city1_brh.png);
     background-size: cover;
@@ -217,4 +217,11 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .image-container {
+        background-image: url(../../img/city2.jpg)
+    }
+}
+
 

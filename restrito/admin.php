@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" href="../css/restrito_css/admin_style.css">
+    <link rel="stylesheet" href="../css/restrito_css/admin.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -63,7 +63,7 @@
                     <input type="submit" class="btn-login" value="Login">
                 </form>
             </div>
-            <div class="col-12 col-sm-4"></div>
+            <div class="col-1 col-sm-4"></div>
         </div>
 
     </div> <!-- container-fluid -->

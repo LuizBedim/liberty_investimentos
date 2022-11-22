@@ -12,7 +12,7 @@ if (!isset($_SESSION))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" href="../css/em_desenvolvimento/desenvolvimento.css">
+    <link rel="stylesheet" href="../css/em_desenvolvimento/em_desenvolvimento.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -26,31 +26,40 @@ if (!isset($_SESSION))
 
 <body>
 
-    <nav>
-        <div class="container-nav">
-            <h1>Liberty</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <nav>
+                <div class="container-nav">
+                    <h1>Liberty</h1>
 
-            <div class="menu">
-                <a href="acoes.php">Ações</a>
-                <a href="#" class="is-active">Mercado</a>
-                <a href="live.php">Live</a>
+                    <div class="menu">
+                        <a href="acoes.php">Ações</a>
+                        <a href="#" class="is-active">Mercado</a>
+                        <a href="live.php">Live</a>
+                        <a href="../php/logado.php">Minha conta</a>
+                    </div>
+
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div> <!-- row -->
+
+        <div class="row image-container">
+            <div class="col-1 col-sm-3"></div>
+            <div class="col-10 col-sm-6 card-center">
+                <h1 class="color-text">Página em desenvolvimento</h1>
+                <hr>
                 <a href="../php/logado.php">Minha conta</a>
+                <hr>
+                <a href="../php/sair.php">Sair</a>
             </div>
-
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-
-    </nav>
-
-    <div class="main">
-        <h1 class="color-text">Página em desenvolvimento</h1><hr>
-        <a href="../php/logado.php">Minha conta</a>
-        <a href="../php/sair.php">Sair</a>
-    </div>
+            <div class="col-1 col-sm-3"></div>
+        </div> <!-- row -->
+    </div> <!-- container-fluid -->
 </body>
 
 </html>

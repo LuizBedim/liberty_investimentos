@@ -121,8 +121,8 @@ h1 {
     }
 }
 
-.main {
-    width: 102vw;
+.image-container {
+    width: 105vw;
     height: 100vh;
     background-image: url(../../img/city1_brh.png);
     background-size: cover;
@@ -130,12 +130,8 @@ h1 {
 
     position: fixed;
     left: 0;
-    /* background: #2c2c2c; */
-
-    display: flex;
 
 }
-
 
 .content-table {
     border-collapse: collapse;
@@ -194,3 +190,12 @@ h1 {
     justify-content: center;
 }
 
+@media (max-width: 768px) {
+    .image-container {
+        background-image: url(../../img/city2.jpg)
+    }
+
+    .content-table {
+        font-size: 0.6em;
+    }
+}

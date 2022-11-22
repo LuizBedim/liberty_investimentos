@@ -14,7 +14,7 @@ require_once("../php/conecta.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" type="text/css" href="../css/restrito_css/exibir_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/restrito_css/exibir.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -52,7 +52,7 @@ require_once("../php/conecta.php");
             </div> <!-- col-12 -->
         </div> <!-- row -->
 
-        <div class="row main">
+        <div class="row image-container">
 
             <div class="col-1 col-sm-2"></div>
             <div class="col-10 col-sm-8">

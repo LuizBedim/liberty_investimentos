@@ -1,0 +1,50 @@
+:root {
+    --primary: #8c38ff;
+    --light: #EEEEEE;
+    --dark: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #2c2c2c;
+
+    color: var(--light);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+
+    outline: none;
+}
+
+.textfield > label {
+    color: var(--light);
+    border-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #EEEEEE80;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--dark);
+    cursor: pointer;
+
+    box-shadow: 0px 10px 40px -12px #21212170;
+}

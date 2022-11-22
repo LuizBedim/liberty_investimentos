@@ -27,7 +27,7 @@ try {
 			header("Location:logado.php");
     }
     else {
-        header("Location:index.php");
+        header("Location:../index.php");
     }
 
 } catch(PDOException $e) {

@@ -20,9 +20,12 @@ try {
     $stmt->bindParam("cep",$cep);
     $stmt->bindParam("numero",$numero); 
 
-    $stmt->execute();
+    if ($stmt->execute()) {
+        header("Location:logado.php");
+    }
 
-    echo $stmt->rowCount() . "Resistro atualizado com sucesso<br>";
+    echo $stmt->rowCount();
+    
 
 } catch (PDOException $e) {
     echo $e->getMessage();
