@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" type="text/css" href="css/index_style/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index_style/style.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -19,24 +19,32 @@
 
 <body>
 
-    <nav>
-        <div class="container-nav">
-            <h1>Liberty</h1>
-
-            <div class="menu">
-                <a href="#" class="is-active">Home</a>
-                <a href="cadastro/cadastro.php">Cadastro</a>
-                <a href="restrito/admin.php">Admin</a>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Liberty</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="cadastro/cadastro.php" class="nav-link">Cadastro</a></li>
+                    <li class="nav-item"><a href="restrito/admin.php" class="nav-link">Admin</a></li>
+                </ul>
             </div>
 
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt="Menu"></button>
+            </div>
+        </nav>
 
-    </nav>
+        <div class="mobile-menu">
+            <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="cadastro/cadastro.php" class="nav-link">Cadastro</a></li>
+                    <li class="nav-item"><a href="restrito/admin.php" class="nav-link">Admin</a></li>
+            </ul>
+        </div>
+    </header>
 
     <div class="container-login">
         <div class="main-login">
@@ -73,7 +81,7 @@
         </div>
     </footer>
 
-    <script src="js/navbar/main.js"></script>
+    <script src="assets/js/navbar/main.js"></script>
 </body>
 
 </html>

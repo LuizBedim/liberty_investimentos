@@ -33,7 +33,7 @@ if (!isset($numero))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" href="../css/cadastro_css/cadastro_style.css">
+    <link rel="stylesheet" href="../assets/css/cadastro_css/cadastro.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -49,24 +49,33 @@ if (!isset($numero))
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <nav>
-                    <div class="container-nav">
-                        <h1>Liberty</h1>
-
-                        <div class="menu">
-                            <a href="../index.php">Home</a>
-                            <a href="#" class="is-active">Cadastro</a>
-                            <a href="../restrito/admin.php">Admin</a>
+            <div class="col-12 col-sm-12">
+                <header>
+                    <nav class="nav-bar">
+                        <div class="logo">
+                            <h1>Liberty</h1>
+                        </div>
+                        <div class="nav-list">
+                            <ul>
+                                <li class="nav-item"><a href="../index.php" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Cadastro</a></li>
+                                <li class="nav-item"><a href="../restrito/admin.php" class="nav-link">Admin</a></li>
+                            </ul>
                         </div>
 
-                        <button class="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
+                        <div class="mobile-menu-icon">
+                            <button onclick="menuShow()"><img class="icon" src="../assets/img/menu_white_36dp.svg" alt="Menu"></button>
+                        </div>
+                    </nav>
+
+                    <div class="mobile-menu">
+                        <ul>
+                        <li class="nav-item"><a href="../index.php" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Cadastro</a></li>
+                                <li class="nav-item"><a href="../restrito/admin.php" class="nav-link">Admin</a></li>
+                        </ul>
                     </div>
-                </nav>
+                </header>
             </div>
         </div>
 
@@ -74,7 +83,7 @@ if (!isset($numero))
             <div class="col-1 col-sm-4"></div>
             <div class="col-10 col-sm-4 card-center">
                 <form action="../php/process_cadastrar.php" method="POST" class="card-cadastro">
-                <h2>Cadastro</h2>
+                    <h2>Cadastro</h2>
                     <div class="textfield">
                         <label name="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" placeholder="Nome">
@@ -113,12 +122,13 @@ if (!isset($numero))
             <div class="col-1 col-sm-4"></div>
         </div>
     </div>
-    
 
 
 
 
-    <script src="../js/cadastro/mask.js"></script>
+
+    <script src="../assets/js/cadastro/mask.js"></script>
+    <script src="../assets/js/navbar/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
 </body>

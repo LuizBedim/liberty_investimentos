@@ -75,7 +75,7 @@ if (!isset($numero))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" href="../css/main_css/logado.css">
+    <link rel="stylesheet" href="../assets/css/main_css/logado_style.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -91,32 +91,21 @@ if (!isset($numero))
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-12">
-                <nav>
-                    <div class="container-nav">
-                        <h1>Liberty</h1>
-                        
-                        <div class="menu">
-                            <a href="../em_desenvolvimento/acoes.php">Ações</a>
-                            <a href="../em_desenvolvimento/mercado.php">Mercado</a>
-                            <a href="../em_desenvolvimento/live.php">Live</a>
-                            <a href="#" class="is-active">Minha conta</a>
+                <header>
+                    <nav class="nav-bar">
+                        <div class="logo">
+                            <h1>Liberty</h1>
                         </div>
-                        
-                        <button class="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                </nav>
+                    </nav>
+                </header>
             </div> <!-- col-12 col-sm-12 -->
         </div> <!-- row -->
-        
+
         <div class="row image-container">
             <div class="col-1 col-sm-4"></div>
             <div class="col-10 col-sm-4 card-center">
-            <form action="process_atualizar.php?id=<?= $id ?>" method="POST" class="card-cadastro">
-                <h2>Dados Pessoais</h2>
+                <form action="process_atualizar.php?id=<?= $id ?>" method="POST" class="card-cadastro">
+                    <h2>Dados Pessoais</h2>
                     <div class="textfield">
                         <label name="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" placeholder="Nome" value="<?= $nome ?>">
@@ -151,15 +140,16 @@ if (!isset($numero))
                     </div>
                     <input type="submit" class="btn-form" value="Modificar">
                     <a href="sair.php" class="btn-form">Sair</a>
-                </form>                
-                
+                </form>
+
             </div> <!--  col-10 col-sm-6 -->
             <div class="col-1 col-sm-4"></div>
         </div> <!-- row -->
-        
+
     </div><!-- container-fluid -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+
+    <script src="../assets/js/navbar/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
 </body>
 

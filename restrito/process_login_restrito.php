@@ -24,7 +24,7 @@ try {
 		if(!isset($_SESSION))
 			session_start();
 			$_SESSION["id_super"] = $id;
-			header("Location:restritoAdm.php");
+			header("Location:exibir_usuarios.php");
     }
     else {
         header("Location:admin.php");
