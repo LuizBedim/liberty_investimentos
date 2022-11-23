@@ -33,7 +33,7 @@ if (!isset($numero))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" href="../assets/css/cadastro_css/cadastro.css">
+    <link rel="stylesheet" href="../assets/css/cadastro_css/cadastro_style.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -70,9 +70,9 @@ if (!isset($numero))
 
                     <div class="mobile-menu">
                         <ul>
-                        <li class="nav-item"><a href="../index.php" class="nav-link">Home</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Cadastro</a></li>
-                                <li class="nav-item"><a href="../restrito/admin.php" class="nav-link">Admin</a></li>
+                            <li class="nav-item"><a href="../index.php" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Cadastro</a></li>
+                            <li class="nav-item"><a href="../restrito/admin.php" class="nav-link">Admin</a></li>
                         </ul>
                     </div>
                 </header>
@@ -82,27 +82,32 @@ if (!isset($numero))
         <div class="row image-container">
             <div class="col-1 col-sm-4"></div>
             <div class="col-10 col-sm-4 card-center">
-                <form action="../php/process_cadastrar.php" method="POST" class="card-cadastro">
+                <form method="POST" class="card-cadastro" id="form">
                     <h2>Cadastro</h2>
                     <div class="textfield">
                         <label name="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" class="required" oninput="nameValidate()">
+                        <span class="span-required">O nome deve ter no mínimo 3 caracteres</span>
                     </div>
                     <div class="textfield">
                         <label name="sobrenome">Sobrenome:</label>
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="required" oninput="sobrenomeValidate()">
+                        <span class="span-required">O sobrenome deve ter no mínimo 3 caracteres</span>
                     </div>
                     <div class="textfield">
                         <label name="email">E-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" name="email" id="email" placeholder="Email" class="required" oninput="emailValidate()">
+                        <span class="span-required">Digite um e-mail válido</span>
                     </div>
                     <div class="textfield">
                         <label name="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                        <input type="password" name="senha" id="senha" placeholder="Senha" class="required" oninput="passwordValidate()">
+                        <span class="span-required">Digite uma senha com no mínimo 4 caracteres</span>
                     </div>
                     <div class="textfield">
                         <label name="cpf">CPF:</label>
-                        <input type="text" name="cpf" id="cpf" autocomplete="off" maxlength="14" placeholder="000.000.000-00">
+                        <input type="text" name="cpf" id="cpf" autocomplete="off" maxlength="14" placeholder="000.000.000-00" class="required" oninput="cpfValidate()">
+                        <span class="span-required">Digite um cpf válido</span>
                     </div>
                     <div class="textfield">
                         <label name="celular">Celular:</label>
@@ -116,7 +121,7 @@ if (!isset($numero))
                         <label name="numero">Número:</label>
                         <input type="text" name="numero" id="numero" placeholder="000">
                     </div>
-                    <input type="submit" class="btn-form" value="cadastrar">
+                    <button type="submit" class="btn-form">Cadastrar</button>
                 </form>
             </div>
             <div class="col-1 col-sm-4"></div>
@@ -129,6 +134,7 @@ if (!isset($numero))
 
     <script src="../assets/js/cadastro/mask.js"></script>
     <script src="../assets/js/navbar/nav.js"></script>
+    <script src="../assets/js/form/formulario.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
 </body>

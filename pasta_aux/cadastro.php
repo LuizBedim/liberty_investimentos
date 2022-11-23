@@ -70,39 +70,39 @@ if(!isset($numero))
         <div class="row">
             <div class="col-4"></div>
             <div class="col-4 main-form">
-                <form method="POST" action="process_cadastrar.php" class="card-cadastro">
+                <form method="POST" action="process_cadastrar.php" class="card-cadastro" id="form-cadastro">
                     <h2>Cadastro</h2>
                     <div class="textfield">
                         <label name="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" require>
                     </div>
                     <div class="textfield">
                         <label name="sobrenome">Sobrenome:</label>
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                        <input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
                     </div>
                     <div class="textfield">
                         <label name="email">E-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                     </div>
                     <div class="textfield">
                         <label name="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                        <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
                     </div>
                     <div class="textfield">
                         <label name="cpf">CPF:</label>
-                        <input type="text" name="cpf" id="cpf" autocomplete="off" maxlength="14" placeholder="000.000.000-00">
+                        <input type="text" class="form-control" name="cpf" id="cpf" autocomplete="off" maxlength="14" placeholder="000.000.000-00">
                     </div>
                     <div class="textfield">
                         <label name="celular">Celular:</label>
-                        <input type="text" name="celular" id="celular" autocomplete="off" maxlength="14" placeholder="(00)00000-0000">
+                        <input type="text" class="form-control" name="celular" id="celular" autocomplete="off" maxlength="14" placeholder="(00)00000-0000">
                     </div>
                     <div class="textfield">
                         <label name="cep">Cep:</label>
-                        <input type="text" name="cep" id="cep" maxlength="9" placeholder="00000-000">
+                        <input type="text" class="form-control" name="cep" id="cep" maxlength="9" placeholder="00000-000">
                     </div>
                     <div class="textfield">
                         <label name="numero">Número:</label>
-                        <input type="text" name="numero" id="numero" placeholder="000">
+                        <input type="text" class="form-control" name="numero" id="numero" placeholder="000">
                     </div>
                     <div class="btn-form">
                         <input type="submit" value="cadastrar">

@@ -2,6 +2,7 @@
     --primary: #8c38ff;
     --light: #EEEEEE;
     --dark: #212121;
+    --red: #e63636;
 }
 
 * {
@@ -73,7 +74,8 @@ header {
 }
 
 .span-required {
-    color: var(--light);
+    font-size: 12px;
+    color: var(--red);
     display: none;
 }
 
