@@ -87,39 +87,42 @@ if (!isset($numero))
                     <div class="textfield">
                         <label name="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" placeholder="Nome" class="required" oninput="nameValidate()">
-                        <span class="span-required">O nome deve ter no mínimo 3 caracteres</span>
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="sobrenome">Sobrenome:</label>
                         <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="required" oninput="sobrenomeValidate()">
-                        <span class="span-required">O sobrenome deve ter no mínimo 3 caracteres</span>
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="email">E-mail:</label>
                         <input type="email" name="email" id="email" placeholder="Email" class="required" oninput="emailValidate()">
-                        <span class="span-required">Digite um e-mail válido</span>
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="senha">Senha:</label>
                         <input type="password" name="senha" id="senha" placeholder="Senha" class="required" oninput="passwordValidate()">
-                        <span class="span-required">Digite uma senha com no mínimo 4 caracteres</span>
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="cpf">CPF:</label>
                         <input type="text" name="cpf" id="cpf" autocomplete="off" maxlength="14" placeholder="000.000.000-00" class="required" oninput="cpfValidate()">
-                        <span class="span-required">Digite um cpf válido</span>
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="celular">Celular:</label>
-                        <input type="text" name="celular" id="celular" autocomplete="off" maxlength="14" placeholder="(00)00000-0000">
+                        <input type="text" name="celular" id="celular" autocomplete="off" maxlength="14" placeholder="(00)00000-0000" class="required" oninput="celularValidate()">
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="cep">Cep:</label>
-                        <input type="text" name="cep" id="cep" maxlength="9" placeholder="00000-000">
+                        <input type="text" name="cep" id="cep" maxlength="9" placeholder="00000-000" class="required" oninput="cepValidate()">
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="numero">Número:</label>
-                        <input type="text" name="numero" id="numero" placeholder="000">
+                        <input type="text" name="numero" id="numero" maxlength="5" placeholder="000" class="required" oninput="numeroValidate()">
+                        <span class="span-required"></span>
                     </div>
                     <button type="submit" class="btn-form">Cadastrar</button>
                 </form>

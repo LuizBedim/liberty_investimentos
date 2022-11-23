@@ -11,7 +11,7 @@ $id = $_SESSION["id_cliente"];
 
 try {
 
-    $stmt = $conn->prepare("SELECT nome, sobrenome, email, senha, cpf, celular, cep, numero FROM clientes WHERE idcliente = $id");
+    $stmt = $conn->prepare("SELECT nome, sobrenome, senha, celular, cep, numero FROM clientes WHERE idcliente = $id");
     $stmt->execute();
 
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -19,9 +19,7 @@ try {
     foreach ($stmt->fetchAll() as $k => $v) {
         $nome = $v['nome'];
         $sobrenome = $v['sobrenome'];
-        $email = $v['email'];
         $senha = $v['senha'];
-        $cpf = $v['cpf'];
         $celular = $v['celular'];
         $cep = $v['cep'];
         $numero = $v['numero'];
@@ -40,22 +38,8 @@ if (!isset($nome))
 if (!isset($sobrenome))
     $sobrenome = "";
 
-if (!isset($email)) {
-    $email = "";
-    $auxe = "";
-} else {
-    $auxe = "disabled";
-}
-
 if (!isset($senha))
     $senha = "";
-
-if (!isset($cpf)) {
-    $cpf = "";
-    $auxf = "";
-} else {
-    $auxf = "disabled";
-}
 
 if (!isset($celular))
     $celular = "";
@@ -115,16 +99,8 @@ if (!isset($numero))
                         <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" value="<?= $sobrenome ?>">
                     </div>
                     <div class="textfield">
-                        <label name="email">E-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="Email" value="<?= $email ?>" <?= $auxe ?>>
-                    </div>
-                    <div class="textfield">
                         <label name="senha">Senha:</label>
                         <input type="password" name="senha" id="senha" placeholder="Senha" value="<?= $senha ?>">
-                    </div>
-                    <div class="textfield">
-                        <label name="cpf">CPF:</label>
-                        <input type="text" name="cpf" id="cpf" autocomplete="off" maxlength="14" placeholder="000.000.000-00" value="<?= $cpf ?>" <?= $auxf ?>>
                     </div>
                     <div class="textfield">
                         <label name="celular">Celular:</label>
