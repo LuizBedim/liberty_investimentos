@@ -7,7 +7,7 @@ require_once("../php/conecta.php");
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
