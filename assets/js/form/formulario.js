@@ -12,9 +12,11 @@ form.addEventListener('submit', (event) => {
     celularValidate();
     cepValidate();
     numeroValidate();
+
 });
 
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const numberRegex = /^[0-9]+$/;
 
 function setError(index, message) {
     campos[index].style.border = '1px solid #e63636';
@@ -31,15 +33,46 @@ function removeError(index) {
     spans[index].style.display = 'none';
 }
 
-function nameValidate() {
-    if (campos[0].value.length < 3) {
-        setError(0, 'O nome deve ter no mínimo 3 caracteres');
-    }
-    else {
-        removeError(0)
-    }
+function isNumeric(myString) {
+    return /\d/.test(myString);
 }
 
+function nameValidate() {
+    // var nome = isNumeric(campos[0].value);
+    // campos.forEach(e => {
+    //     if (isNumeric(e.value) == true) {
+    //         setError(0, 'Digita a porra do nome certo');
+    //     } else if (campos[0].value.length < 3) {
+    //         setError(0, 'O nome deve ter no mínimo 3 caracteres');
+    //     }
+    //     else {
+    //         removeError(0);
+    //     }
+    // });
+
+
+    // if (numberRegex.test(campos[0].value)) {
+    //     setError(0, 'Digita a porra do nome certo');
+    // } else if (campos[0].value.length < 3) {
+    //     setError(0, 'O nome deve ter no mínimo 3 caracteres');
+    // } else {
+    //     removeError(0);
+    // }
+
+        var nome = document.getElementById('nome');   
+        nome.addEventListener('keyup', function(){
+            if (campos[0].value.length >= 3) {
+                if (isNumeric(nome.value) == true) {
+                    setError(0, 'Nome não pode conter números');
+                } else {
+                    removeError(0);
+                }
+            } else {
+                setError(0, 'O nome deve ter no mínimo 3 caracteres');
+            }
+        });
+    
+}
 function sobrenomeValidate() {
     if (campos[1].value.length < 3) {
         setError(1, 'O sobrenome deve ter no mínimo 3 caracteres');
@@ -69,9 +102,25 @@ function passwordValidate() {
 function cpfValidate() {
     if (campos[4].value.length != 14) {
         setError(4, 'Digite um cpf válido');
+    } else if (campos[4].value[3] == '.') {
+        console.log('Chegou aqui');
     } else {
         removeError(4);
     }
+
+    // var cpf = document.getElementById('cpf');   
+    //     cpf.addEventListener('keyup', function(){
+    //         var cont = cpf.value.length;
+    //         if (campos[0].value.length >= 3) {
+    //             if (isNumeric(nome.value) == true) {
+    //                 setError(0, 'Nome não pode conter números');
+    //             } else {
+    //                 removeError(0);
+    //             }
+    //         } else {
+    //             setError(0, 'O nome deve ter no mínimo 3 caracteres');
+    //         }
+    //     });
 }
 
 function celularValidate() {

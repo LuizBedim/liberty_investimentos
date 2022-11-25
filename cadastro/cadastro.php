@@ -46,7 +46,6 @@ if (!isset($numero))
 </head>
 
 <body>
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-12">
@@ -82,7 +81,7 @@ if (!isset($numero))
         <div class="row image-container">
             <div class="col-1 col-sm-4"></div>
             <div class="col-10 col-sm-4 card-center">
-                <form method="POST" class="card-cadastro" id="form">
+                <form method="POST" action="../php/process_cadastrar.php"class="card-cadastro" id="form">
                     <h2>Cadastro</h2>
                     <div class="textfield">
                         <label name="nome">Nome:</label>
@@ -130,10 +129,6 @@ if (!isset($numero))
             <div class="col-1 col-sm-4"></div>
         </div>
     </div>
-
-
-
-
 
     <script src="../assets/js/cadastro/mask.js"></script>
     <script src="../assets/js/navbar/nav.js"></script>
