@@ -12,7 +12,6 @@ form.addEventListener('submit', (event) => {
     celularValidate();
     cepValidate();
     numeroValidate();
-
 });
 
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -38,8 +37,14 @@ function isNumeric(myString) {
 }
 
 function nameValidate() {
+    if (campos[0].value.length <= 0) {
+        setError(0, 'Preencha este campo');
+    } else {
+        removeError(0);
+    }
+    
     // var nome = isNumeric(campos[0].value);
-    // campos.forEach(e => {
+    // campos.forEach(e => {    
     //     if (isNumeric(e.value) == true) {
     //         setError(0, 'Digita a porra do nome certo');
     //     } else if (campos[0].value.length < 3) {
@@ -51,28 +56,22 @@ function nameValidate() {
     // });
 
 
-    // if (numberRegex.test(campos[0].value)) {
-    //     setError(0, 'Digita a porra do nome certo');
-    // } else if (campos[0].value.length < 3) {
-    //     setError(0, 'O nome deve ter no mínimo 3 caracteres');
-    // } else {
-    //     removeError(0);
-    // }
+    // var nome = document.getElementById('nome');
+    // nome.addEventListener('keyup', function () {
+    //     if (campos[0].value.length >= 3) {
+    //         if (isNumeric(nome.value) == true) {
+    //             setError(0, 'Nome não pode conter números');
+    //         } else {
+    //             removeError(0);
+    //         }
+    //     } else if (campos) {
 
-        var nome = document.getElementById('nome');   
-        nome.addEventListener('keyup', function(){
-            if (campos[0].value.length >= 3) {
-                if (isNumeric(nome.value) == true) {
-                    setError(0, 'Nome não pode conter números');
-                } else {
-                    removeError(0);
-                }
-            } else {
-                setError(0, 'O nome deve ter no mínimo 3 caracteres');
-            }
-        });
-    
+    //     } else {
+    //         setError(0, 'O nome deve ter no mínimo 3 caracteres');
+    //     }
+    // });
 }
+
 function sobrenomeValidate() {
     if (campos[1].value.length < 3) {
         setError(1, 'O sobrenome deve ter no mínimo 3 caracteres');

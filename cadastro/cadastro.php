@@ -35,7 +35,7 @@ if (!isset($numero))
     <!-- style.css -->
     <link rel="stylesheet" href="../assets/css/cadastro_css/cadastro_style.css">
     <!-- Icone da página -->
-    <link rel="shortcut icon" href="../img/icon2.ico">
+    <link rel="shortcut icon" href="../assets/img/icon2.ico">
     <!-- Font-family KoHo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,7 +85,7 @@ if (!isset($numero))
                     <h2>Cadastro</h2>
                     <div class="textfield">
                         <label name="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" class="required" oninput="nameValidate()">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
@@ -132,7 +132,7 @@ if (!isset($numero))
 
     <script src="../assets/js/cadastro/mask.js"></script>
     <script src="../assets/js/navbar/nav.js"></script>
-    <script src="../assets/js/form/form.js"></script>
+    <script src="../assets/js/form/formulario.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
 </body>

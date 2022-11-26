@@ -1,7 +1,11 @@
 
 const inputNome = document.querySelector('#nome');
+const inputSobre = document.querySelector('#sobre');
 
-console.log(inputNome);
+
+const form = document.getElementById('form');
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
 
 inputNome.addEventListener('keypress', function(e) {
 
@@ -17,3 +21,32 @@ inputNome.addEventListener('keypress', function(e) {
     }
 });
 
+function setError(index, message) {
+    campos[index].style.border = '1px solid #e63636';
+    spans[index].style.display = 'block';
+
+
+    spans[index].innerText = message;
+    // const span = document.querySelector('span');
+    // span.innerText = message;
+}
+
+function removeError(index) {
+    campos[index].style.border = '';
+    spans[index].style.display = 'none';
+}
+
+function nameValidate() {
+    var nome = document.getElementById('nome');
+    nome.addEventListener('keyup', function () {
+        if (campos[0].value.length >= 3) {
+            if (isNumeric(nome.value) == true) {
+                setError(0, 'Nome não pode conter números');
+            } else {
+                removeError(0);
+            }
+        } else {
+            setError(0, 'O nome deve ter no mínimo 3 caracteres');
+        }
+    });
+}
