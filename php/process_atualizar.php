@@ -25,7 +25,6 @@ try {
     }
 
     echo $stmt->rowCount();
-    
 
 } catch (PDOException $e) {
     echo $e->getMessage();

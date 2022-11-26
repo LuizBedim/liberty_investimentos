@@ -8,7 +8,7 @@
     <!-- style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/index_style/style.css">
     <!-- Icone da página -->
-    <link rel="shortcut icon" href="img/icon2.ico">
+    <link rel="shortcut icon" href="assets/img/icon2.ico">
     <!-- Font-family KoHo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,7 @@
                 <p>Invista com</p>
                 <h1>Liberty</h1>
                 <image>
-                    <img src="css/index_style/investor6.svg" class="left-login-image" alt="Animação investidor">
+                    <img src="assets/css/index_style/investor6.svg" class="left-login-image" alt="Animação investidor">
                 </image>
             </div>
 

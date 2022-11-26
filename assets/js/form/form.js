@@ -7,6 +7,7 @@ const form = document.getElementById('form');
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 
+
 inputNome.addEventListener('keypress', function(e) {
 
     var keyCode = (e.keyCode ? e.keyCode : e.which);
@@ -37,16 +38,9 @@ function removeError(index) {
 }
 
 function nameValidate() {
-    var nome = document.getElementById('nome');
-    nome.addEventListener('keyup', function () {
-        if (campos[0].value.length >= 3) {
-            if (isNumeric(nome.value) == true) {
-                setError(0, 'Nome não pode conter números');
-            } else {
-                removeError(0);
-            }
-        } else {
-            setError(0, 'O nome deve ter no mínimo 3 caracteres');
-        }
-    });
+    if (campos[0].value.length <= 0) {
+        setError(0, 'Preencha este campo');
+    } else {
+        removeError(0);
+    }
 }
