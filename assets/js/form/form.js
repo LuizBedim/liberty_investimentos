@@ -1,26 +1,19 @@
 
-const form = document.getElementById('form');
-const nome = document.getElementById('nome');
-const sobrenome = document.getElementById('sobrenome');
+const inputNome = document.querySelector('#nome');
 
+console.log(inputNome);
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+inputNome.addEventListener('keypress', function(e) {
 
-    checkInputs();
+    var keyCode = (e.keyCode ? e.keyCode : e.which);
+
+    console.log(keyCode);
+    // 47+ a -58
+    // if (keyCode > 47 && keyCode < 58) {
+    //     e.preventDefault();
+    // }
+    if (keyCode < 65 || keyCode > 90 && keyCode < 97 || keyCode > 122) {
+        e.preventDefault();
+    }
 });
 
-function checkInputs() {
-
-    const nomeValue = nome.value.trim();
-
-    if (nomeValue === '') {
-        setError(nome, 'Preencha esse campo');
-    } else {
-
-    }
-}
-
-function setError(input, message) {
-    
-}
