@@ -57,11 +57,12 @@
             </div>
 
             <div class="right-login">
-                <form method="POST" action="php/process_login.php" class="card-login">
+                <form method="POST" action="php/process_login.php" class="card-login" id="form">
                     <h2>LOGIN</h2>
                     <div class="textfield">
                         <label for="usuario">E-mail</label>
                         <input type="email" name="email" id="email" autocomplete="off" placeholder="E-mail">
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
