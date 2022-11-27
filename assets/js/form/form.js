@@ -13,30 +13,37 @@ const spans = document.querySelectorAll('.span-required');
 
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-const button = document.getElementById('button');
+// const button = document.getElementById('button');
 
-// button.addEventListener('click', (event) => {
 
-//     nameValidate();
+/*
+===== Métodos testados para envio do formulário =====
+button.addEventListener('click', (event) => {
+
+    nameValidate();
     
-//     event.preventDefault();
-// });
+    event.preventDefault();
+});
 
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault();
+==========
 
-//     console.log('prevent');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-//     nameValidate();
+    console.log('prevent');
+
+    nameValidate();
     
-// });
+});
 
-// form.onsubmit = event => {
-//     event.preventDefault();
+==========
 
-//     nameValidate();
-// }
+form.onsubmit = event => {
+    event.preventDefault();
 
+    nameValidate();
+}
+*/
 
 function valForm(frm) {
     var nErros = 0;
@@ -62,6 +69,7 @@ function valForm(frm) {
 
 }
 
+// Error functions
 function setError(index, message) {
     campos[index].style.border = '1px solid #e63636';
     spans[index].style.display = 'block';
