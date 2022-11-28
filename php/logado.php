@@ -59,7 +59,7 @@ if (!isset($numero))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" href="../assets/css/main_css/logado_style.css">
+    <link rel="stylesheet" href="../assets/css/main_css/style_logado.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -88,31 +88,37 @@ if (!isset($numero))
         <div class="row image-container">
             <div class="col-1 col-sm-4"></div>
             <div class="col-10 col-sm-4 card-center">
-                <form action="process_atualizar.php?id=<?= $id ?>" method="POST" class="card-cadastro">
+                <form action="process_atualizar.php?id=<?= $id ?>" method="POST" class="card-cadastro" onsubmit="valForm(this); return false;">
                     <h2>Dados Pessoais</h2>
                     <div class="textfield">
                         <label name="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome" value="<?= $nome ?>">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" class="required" value="<?= $nome ?>">
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="sobrenome">Sobrenome:</label>
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" value="<?= $sobrenome ?>">
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="required" value="<?= $sobrenome ?>">
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha" value="<?= $senha ?>">
+                        <input type="password" name="senha" id="senha" placeholder="Senha" class="required" value="<?= $senha ?>">
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="celular">Celular:</label>
-                        <input type="text" name="celular" id="celular" autocomplete="off" maxlength="14" placeholder="(00)00000-0000" value="<?= $celular ?>">
+                        <input type="text" name="celular" id="celular" autocomplete="off" maxlength="14" placeholder="(00)00000-0000" class="required" value="<?= $celular ?>">
+                        <span class="span-required"></span>                   
                     </div>
                     <div class="textfield">
                         <label name="cep">Cep:</label>
-                        <input type="text" name="cep" id="cep" maxlength="9" placeholder="00000-000" value="<?= $cep ?>">
+                        <input type="text" name="cep" id="cep" maxlength="9" placeholder="00000-000" class="required" value="<?= $cep ?>">
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="numero">Número:</label>
-                        <input type="text" name="numero" id="numero" placeholder="000" value="<?= $numero ?>">
+                        <input type="text" name="numero" id="numero" placeholder="000" class="required" value="<?= $numero ?>">
+                        <span class="span-required"></span>
                     </div>
                     <input type="submit" class="btn-form" value="Modificar">
                     <a href="sair.php" class="btn-form">Sair</a>
@@ -124,6 +130,7 @@ if (!isset($numero))
 
     </div><!-- container-fluid -->
 
+    <script src="../assets/js/logado/logado_form.js"></script>
     <script src="../assets/js/navbar/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>

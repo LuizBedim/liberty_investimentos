@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/index_style/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index_style/index_style.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="assets/img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -57,16 +57,17 @@
             </div>
 
             <div class="right-login">
-                <form method="POST" action="php/process_login.php" class="card-login" id="form">
+                <form method="POST" action="php/process_login.php" class="card-login" id="form" onsubmit="valForm(this); return false;">
                     <h2>LOGIN</h2>
                     <div class="textfield">
                         <label for="usuario">E-mail</label>
-                        <input type="email" name="email" id="email" autocomplete="off" placeholder="E-mail">
+                        <input type="email" name="email" id="email" class="required" autocomplete="off" placeholder="E-mail">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                        <input type="password" name="senha" id="senha" class="required" placeholder="Senha">
+                        <span class="span-required"></span>
                     </div>
                     <input type="submit" class="btn-login" value="Login">
                 </form>
@@ -82,6 +83,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/login/form_login.js"></script>
     <script src="assets/js/navbar/main.js"></script>
 </body>
 

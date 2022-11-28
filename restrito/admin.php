@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" href="../assets/css/restrito_css/admin_style.css">
+    <link rel="stylesheet" href="../assets/css/restrito_css/admin.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -57,15 +57,17 @@
         <div class="row image-container">
             <div class="col-1 col-sm-4"></div>
             <div class="col-10 col-sm-4 card-center">
-                <form method="POST" action="process_login_restrito.php" class="card-login">
+                <form method="POST" action="process_login_restrito.php" class="card-login" onsubmit="valForm(this); return false;">
                     <h2>LOGIN-ADM</h2>
                     <div class="textfield">
                         <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" id="usuario" autocomplete="off" placeholder="Usuário">
+                        <input type="text" name="usuario" id="usuario" autocomplete="off" placeholder="Usuário" class="required">
+                        <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                        <input type="password" name="senha" id="senha" placeholder="Senha" class="required">
+                        <span class="span-required"></span>
                     </div>
                     <input type="submit" class="btn-login" value="Login">
                 </form>
@@ -75,6 +77,7 @@
 
     </div> <!-- container-fluid -->
 
+    <script src="../assets/js/restrito/admin.js"></script>
     <script src="../assets/js/navbar/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
