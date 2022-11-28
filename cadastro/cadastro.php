@@ -22,6 +22,11 @@ if (!isset($cep))
 
 if (!isset($numero))
     $numero = "";
+
+$msg = "";
+if(isset($_GET["msg"]))
+    $msg = $_GET["msg"];
+
 ?>
 
 
@@ -42,7 +47,7 @@ if (!isset($numero))
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>Liberty</title>
+    <title>Cadastro</title>
 </head>
 
 <body>
@@ -123,6 +128,7 @@ if (!isset($numero))
                         <input type="text" name="numero" id="numero" maxlength="5" placeholder="000" class="required">
                         <span class="span-required"></span>
                     </div>
+                    <p style="color: red;"><?= $msg ?></p>
                     <!-- <button type="submit" id="button" name="button" class="btn-form">Cadastrar</button> -->
                     <input type="submit" value="Cadastrar" class="btn-form">
                 </form>

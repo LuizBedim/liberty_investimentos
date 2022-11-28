@@ -8,7 +8,7 @@
     <!-- style.css -->
     <link rel="stylesheet" href="../assets/css/restrito_css/admin.css">
     <!-- Icone da página -->
-    <link rel="shortcut icon" href="../img/icon2.ico">
+    <link rel="shortcut icon" href="../assets/img/icon2.ico">
     <!-- Font-family KoHo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
