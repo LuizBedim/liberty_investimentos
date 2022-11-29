@@ -11,6 +11,7 @@ $cep = $_POST["cep"];
 $numero = $_POST["numero"]; 
 
 try {
+    
     $stmt = $conn->prepare("INSERT INTO `clientes` (`idcliente`, `nome`, `sobrenome`, `email`, `senha`, `cpf`, `celular`, `cep`, `numero`) VALUES (NULL, :nome, :sobrenome, :email, :senha, :cpf, :celular, :cep, :numero);");
     $stmt->bindParam("nome",$nome);
     $stmt->bindParam("sobrenome",$sobrenome);
