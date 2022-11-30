@@ -27,7 +27,7 @@ try {
 			header("Location:logado.php");
     }
     else {
-        header("Location:../index.php");
+        header("Location:../index.php?msg=E-mail ou senha incorretos");
     }
 
 } catch(PDOException $e) {

@@ -128,7 +128,7 @@ if(isset($_GET["msg"]))
                         <input type="text" name="numero" id="numero" maxlength="5" placeholder="000" class="required">
                         <span class="span-required"></span>
                     </div>
-                    <p style="color: red;"><?= $msg ?></p>
+                    <p class="alert"><?= $msg ?></p>
                     <!-- <button type="submit" id="button" name="button" class="btn-form">Cadastrar</button> -->
                     <input type="submit" value="Cadastrar" class="btn-form">
                 </form>

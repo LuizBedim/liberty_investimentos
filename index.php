@@ -1,3 +1,11 @@
+<?php 
+$msg = "";
+if(isset($_GET["msg"]))
+    $msg = $_GET["msg"];
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/index_style/index_style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index_style/style.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="assets/img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -69,6 +77,7 @@
                         <input type="password" name="senha" id="senha" class="required" placeholder="Senha">
                         <span class="span-required"></span>
                     </div>
+                    <p class="alert"><?= $msg ?></p>
                     <input type="submit" class="btn-login" value="Login">
                 </form>
             </div>

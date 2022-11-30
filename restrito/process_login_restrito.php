@@ -27,7 +27,7 @@ try {
 			header("Location:exibir_usuarios.php");
     }
     else {
-        header("Location:admin.php");
+        header("Location:admin.php?msg=Usuário ou senha incorretos");
     }
 
 } catch(PDOException $e) {
