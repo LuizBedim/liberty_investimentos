@@ -67,7 +67,7 @@ inputUser.addEventListener('keypress', function(e) {
 
     var keyCode = (e.keyCode ? e.keyCode : e.which);
     // 32 espaço -- 65+ a -90 letras maiusculas -- 97+ a -122 letras minusculas
-    if (keyCode < 32 || keyCode > 32 && keyCode < 65 || keyCode > 90 && keyCode < 97 || keyCode > 122) {
+    if (keyCode < 32 || keyCode > 32 && keyCode < 65 || keyCode > 90 && keyCode < 97 || keyCode > 122 && keyCode < 224 || keyCode > 227) {
         e.preventDefault();
     }
 });

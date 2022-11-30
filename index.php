@@ -69,12 +69,12 @@ if(isset($_GET["msg"]))
                     <h2>LOGIN</h2>
                     <div class="textfield">
                         <label for="usuario">E-mail</label>
-                        <input type="email" name="email" id="email" class="required" autocomplete="off" placeholder="E-mail">
+                        <input type="email" name="email" id="email" class="required" maxlength="45" autocomplete="off" placeholder="E-mail">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" class="required" placeholder="Senha">
+                        <input type="password" name="senha" id="senha" class="required" maxlength="30" placeholder="Senha">
                         <span class="span-required"></span>
                     </div>
                     <p class="alert"><?= $msg ?></p>

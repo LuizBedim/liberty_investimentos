@@ -23,11 +23,6 @@ if(isset($_GET["msg"]))
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Admin</title>
-    <style>
-        .alert {
-    color: var(--red);
-}
-    </style>
 </head>
 
 <body>
@@ -72,12 +67,12 @@ if(isset($_GET["msg"]))
                     <h2>LOGIN-ADM</h2>
                     <div class="textfield">
                         <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" id="usuario" autocomplete="off" placeholder="Usuário" class="required">
+                        <input type="text" name="usuario" id="usuario" autocomplete="off" maxlength="30" placeholder="Usuário" class="required">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha" class="required">
+                        <input type="password" name="senha" id="senha" maxlength="30" placeholder="Senha" class="required">
                         <span class="span-required"></span>
                     </div>
                     <p class="alert"><?= $msg ?></p>

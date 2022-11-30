@@ -30,7 +30,7 @@ try {
     }
 
 } catch (PDOException $e) {
-    header("Location:../cadastro/cadastro.php?msg=Email ou cpf já cadastrado!");
+    header("Location:../cadastro/cadastro.php?msg=Email já cadastrado!");
     $e->getMessage();
 }
 

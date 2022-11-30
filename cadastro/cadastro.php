@@ -48,11 +48,6 @@ if(isset($_GET["msg"]))
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Cadastro</title>
-    <style>
-        .alert {
-    color: var(--red);
-}
-    </style>
 </head>
 
 <body>
@@ -95,22 +90,22 @@ if(isset($_GET["msg"]))
                     <h2>Cadastro</h2>
                     <div class="textfield">
                         <label name="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome" class="required" >
+                        <input type="text" name="nome" id="nome" maxlength="30" placeholder="Nome" class="required" >
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="sobrenome">Sobrenome:</label>
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="required">
+                        <input type="text" name="sobrenome" id="sobrenome" maxlength="30" placeholder="Sobrenome" class="required">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="email">E-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="Email" class="required">
+                        <input type="email" name="email" id="email" maxlength="45" placeholder="Email" class="required">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha" class="required">
+                        <input type="password" name="senha" id="senha" maxlength="30" placeholder="Senha" class="required">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">

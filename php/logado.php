@@ -92,17 +92,17 @@ if (!isset($numero))
                     <h2>Dados Pessoais</h2>
                     <div class="textfield">
                         <label name="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome" class="required" value="<?= $nome ?>">
+                        <input type="text" name="nome" id="nome" maxlength="30" placeholder="Nome" class="required" value="<?= $nome ?>">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="sobrenome">Sobrenome:</label>
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="required" value="<?= $sobrenome ?>">
+                        <input type="text" name="sobrenome" id="sobrenome" maxlength="30" placeholder="Sobrenome" class="required" value="<?= $sobrenome ?>">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
                         <label name="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha" class="required" value="<?= $senha ?>">
+                        <input type="password" name="senha" id="senha" maxlength="30" placeholder="Senha" class="required" value="<?= $senha ?>">
                         <span class="span-required"></span>
                     </div>
                     <div class="textfield">
@@ -117,7 +117,7 @@ if (!isset($numero))
                     </div>
                     <div class="textfield">
                         <label name="numero">Número:</label>
-                        <input type="text" name="numero" id="numero" placeholder="000" class="required" value="<?= $numero ?>">
+                        <input type="text" name="numero" id="numero" maxlength="5" placeholder="000" class="required" value="<?= $numero ?>">
                         <span class="span-required"></span>
                     </div>
                     <input type="submit" class="btn-form" value="Modificar">
