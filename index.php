@@ -14,7 +14,7 @@ if(isset($_GET["msg"]))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/index_style/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index_style/index_style.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="assets/img/icon2.ico">
     <!-- Font-family KoHo -->
