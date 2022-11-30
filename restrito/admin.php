@@ -13,7 +13,7 @@ if(isset($_GET["msg"]))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css -->
-    <link rel="stylesheet" href="../assets/css/restrito_css/style_admin.css">
+    <link rel="stylesheet" href="../assets/css/restrito/admin.css">
     <!-- Icone da página -->
     <link rel="shortcut icon" href="../assets/img/icon2.ico">
     <!-- Font-family KoHo -->
@@ -23,7 +23,7 @@ if(isset($_GET["msg"]))
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Admin</title>
-
+   
 </head>
 
 <body>
